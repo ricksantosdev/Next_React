@@ -1,0 +1,23 @@
+configurando o ambiente
+install vscode
+color highlight
+dracula
+material icon
+css modules
+
+mapa do curso * criar mapas mentais sobre o conteudo a ser estudado
+
+ReactJs
+gerenciador de pacotes 
+npm / yarn
+
+Criando aplicacao do react
+npx create-react-app <nome_projeto>
+entrar na pasta modules npm install --save-dev web-vitals
+
+funtion Objeto({ parametro1 , parametro2}{
+	return(
+		<p> parametro1 {parametro1}  parametro2: {parametro2}  </p>
+	
+	);
+}
