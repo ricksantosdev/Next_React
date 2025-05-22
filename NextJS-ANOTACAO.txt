@@ -22,3 +22,23 @@ funtion Objeto({ parametro1 , parametro2}{
 	);
 }
 //comentando projeto is back
+
+rodar projeto react > npm start
+
+function MostrarNome(props){
+	return(
+		<div> {props.aluno} </div>
+	);
+}
+
+//usando desestruturador
+function MostrarNome({aluno}){
+	return(
+		<div> {aluno} </div>
+	);
+}
+
+
+const [nomeUseState, nomeDafuncao] = useState(''); --> criando useState texto
+const [objeto, setObjeto]  = useState({}) --> criando useState objeto
+const [objeto, setObjeto]  = useState([]) --> criando useState array
