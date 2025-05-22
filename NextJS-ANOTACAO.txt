@@ -1,3 +1,9 @@
+setando segurancao no git
+
+git config --global user.email "email@com"
+git config --global user.name "senha_123"
+
+
 configurando o ambiente
 install vscode
 color highlight
