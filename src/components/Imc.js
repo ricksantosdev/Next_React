@@ -4,7 +4,7 @@ function Imc(){
 
     const [peso, setPeso] = useState('');
     const [altura, setAltura] = useState('');
-    let [imc , setImc] = useState('');
+    const [imc , setImc] = useState('');
 
     return(
         <form onSubmit={CalculaImc}>
@@ -43,8 +43,25 @@ function Imc(){
     function CalculaImc(e){
         e.preventDefault();
 
-        imc = (peso * altura) / 2;
-        alert('funcionando');
+        let imcCalculo = peso / (altura * altura) ;
+        let resultadoImc = '';
+
+        if(imcCalculo < 18.5){
+            resultadoImc = 'Abaixo do peso normal';
+        }else if (imcCalculo >= 18.5 && imcCalculo < 24.9){
+            resultadoImc = 'Peso normal';
+        }else if (imcCalculo >= 24.9 && imcCalculo < 29.9){
+            resultadoImc = 'Excesso de peso';
+        }else if(imcCalculo >= 29.9 && imcCalculo < 34.9){
+            resultadoImc = 'Obesidade classe I';
+        }else if(imcCalculo >= 34.9 && imcCalculo < 39.9){
+            resultadoImc = 'Obesidade classe II';
+        }else if(imcCalculo >= 39.9){
+            resultadoImc = 'Obesidade classe III'
+        }
+        
+        setImc(resultadoImc);
+
     }
 }
 
