@@ -48,3 +48,6 @@ function MostrarNome({aluno}){
 const [nomeUseState, nomeDafuncao] = useState(''); --> criando useState texto
 const [objeto, setObjeto]  = useState({}) --> criando useState objeto
 const [objeto, setObjeto]  = useState([]) --> criando useState array
+
+Instalando o react router -> npm install react-router-dom
+Instalando  o style components -> npm install --save styled-components

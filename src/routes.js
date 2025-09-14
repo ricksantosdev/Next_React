@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
 import Menu from "./components/Menu";
+import Erro from "./pages/Erro";
+import Produto from "./pages/Produto";
 
 const Rotas = () => {
     return(
@@ -12,8 +14,10 @@ const Rotas = () => {
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/home" element={<Home/>} />
-            <Route path="/contato" element={<Contato/>} />
+            <Route exact path="/contato" element={<Contato/>} />
             <Route path="/sobre" element={<Sobre/>} />
+            <Route path="*" element={<Erro/>} />
+            <Route path="/produto/:id" element={<Produto/>}/>
         </Routes>       
         </BrowserRouter>
     )
